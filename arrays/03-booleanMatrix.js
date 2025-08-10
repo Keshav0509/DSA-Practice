@@ -35,4 +35,26 @@ export const booleanMatrix = (mat) => {
   return mat;
 }
 
-// export const 
+export const optimizeBooleanMatrix = (mat) => {
+  const x = new Set();
+  const y = new Set();
+
+  for(let i = 0; i < mat.length; i++) {
+    for(let j = 0; j < mat[i].length; j++) {
+      if(mat[i][j] === 0) {
+        x.add(i);
+        y.add(j);
+      }
+    }
+  }
+
+  for(let i = 0; i < mat.length; i++) {
+    for(let j = 0; j < mat[i].length; j++) {
+      if(x.has(i) || y.has(j)) {
+        mat[i][j] = 1;
+      }
+    }
+  }
+  
+  return mat;
+}
