@@ -31,4 +31,19 @@ export const rowWithMax1s = (arr) => {
   return idx;
 }
 
-// export const optimizeRowWithMax1s = (row)
+export const optimizeRowWithMax1s = (arr) => {
+  const n = arr.length;
+  const m = arr[0].length;
+
+  let res = -1;
+  let j = m - 1;
+
+  for(let i = 0; i < n; i++) {
+    while(j >= 0 && arr[i][j] === 1) {
+      j--;
+      res = i;
+    }
+  }
+
+  return res;
+}
