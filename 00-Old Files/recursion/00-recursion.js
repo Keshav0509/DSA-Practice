@@ -1,0 +1,23 @@
+import { printNumber } from "./01-print-numbers.js";
+import { factorial } from "./02-factorial.js";
+import { sum } from "./03-sum.js";
+import { fibonacci } from "./04-fibonacci.js";
+import { isSorted } from "./05-isSortedArr.js";
+import { recursiveSum } from "./06-recursiveSum.js";
+import { binarySearch } from "./08-binary-search.js";
+import { permutation } from "./10-permutation.js";
+import { subsequence } from "./11-subsequence .js";
+import { sortArray } from "./12-mergeSort.js";
+
+// printNumber(10);
+console.log("sum:", sum(6));
+console.log("factorial:", factorial(6));
+console.log("fibonacci:", fibonacci(6));
+const arr = [1,2,3,4,5], n = 5;
+// const arr = [5,1,2,4,3], n = 5;
+console.log("is sorted array:", isSorted(arr, n));
+console.log("recursiveSum:", recursiveSum(0, 5));
+console.log("binary Search:", binarySearch(arr, n));
+console.log("Permutation:", permutation('abc'));
+console.log("Subsequences:", subsequence([1,2,3]));
+console.log("merge sort:", sortArray([5,3,2,4,1]));
