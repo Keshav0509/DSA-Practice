@@ -19,6 +19,17 @@ Linked List: 1 -> 2 -> 3 -> 4 -> 5
 
 import {ListNode} from './00-ListNode.js'
 
-var deleteDuplicates = function (head) {
-   
+export const deleteDuplicates = function (head) {
+  if (head === null) return null;
+
+  let curr = head;
+  while (curr !== null && curr.next !== null) {
+    if(curr.val === curr.next.val){
+      curr.next = curr.next.next;
+    }else{
+      curr = curr.next;
+    }
+  }
+
+  return head;
 };

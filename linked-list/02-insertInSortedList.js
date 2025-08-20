@@ -19,5 +19,18 @@ Output :
 */
 import {ListNode} from './00-ListNode.js';
 var insertAtMiddle = function(head, k) {
-    
+  const new_node = new ListNode(k);
+  if(head === null || head.val > k){
+    new_node.next = head;
+    return new_node;
+  }
+
+  let curr = head;
+  while(curr.next !==null && curr.next.val < k){
+    curr = curr.next;
+  }
+  
+  new_node.next = curr.next;
+  curr.next = new_node;
+  return head;
 };

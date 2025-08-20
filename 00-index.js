@@ -2,6 +2,8 @@ import { printSubarrays1, printSubarrays2 } from "./arrays/01-printSubarray.js";
 import { prefixSubarraySum, subarraySum } from "./arrays/02-subarraySum.js";
 import { booleanMatrix, optimizeBooleanMatrix } from "./arrays/03-booleanMatrix.js";
 import merge from "./arrays/06-mergeTwoSortedArray.js";
+import { buildList, printList } from "./linked-list/00-ListNode.js";
+import { deleteDuplicates } from "./linked-list/03-deleteDuplicates.js";
 
 
 // console.log(printSubarrays1([1, 2, 3, 4]));
@@ -10,4 +12,8 @@ import merge from "./arrays/06-mergeTwoSortedArray.js";
 // console.log(prefixSubarraySum([12, 18, 5, 11, 30, 5], 69));
 // console.log(booleanMatrix([[1, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0]]));
 // console.log(optimizeBooleanMatrix([[1, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0]]));
-console.log(merge([0],0,[1],1));
+// console.log(merge([0],0,[1],1));
+const head = buildList([1,1,2,2,3]);
+// const unique = deleteDuplicates(head);
+printList(head);
+// console.log(unique); 
