@@ -17,7 +17,7 @@ k : 6
 Output : 
 1 -> 3 -> 5 -> 6 -> 7 -> 9
 */
-
-var deleteDuplicates = function (head) {
-   
+import {ListNode} from './00-ListNode.js';
+var insertAtMiddle = function(head, k) {
+    
 };
