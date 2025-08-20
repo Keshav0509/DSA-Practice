@@ -11,5 +11,22 @@ The result of the merge is [1,2,2,3,5,6] with the underlined elements coming fro
 */
 
 export default function merge(arr1, m, arr2, n) {
-  
+  let idx = m + n - 1;
+  let i = m - 1, j = n - 1;
+
+  while ( i >= 0 && j >= 0) {
+    if (arr1[i] <= arr2[j]) {
+      arr1[idx] = arr2[j];
+      j--;
+    }else{
+      arr1[idx] = arr1[i];
+      i--;
+    }
+    idx--;
+  }
+  while (j >= 0) {
+    arr1[idx] = arr2[j];
+    idx--, j--;
+  }
+  return arr1;
 }
