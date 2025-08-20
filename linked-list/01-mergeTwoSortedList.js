@@ -5,12 +5,6 @@
   Input: list1 = [1,2,4], list2 = [1,3,4]
   Output: [1,1,2,3,4,4]  
 */
-class ListNode {
-  constructor(val, next = null) {
-    this.val = val;
-    this.next = next;
-  }
-}
 
 export function recursionMergeTwoLists(head1, head2) {
   if(head1 === null || head2 === null){
