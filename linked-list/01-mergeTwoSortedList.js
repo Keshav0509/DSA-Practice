@@ -5,6 +5,7 @@
   Input: list1 = [1,2,4], list2 = [1,3,4]
   Output: [1,1,2,3,4,4]  
 */
+import { ListNode } from "./00-ListNode.js";
 
 export function recursionMergeTwoLists(head1, head2) {
   if(head1 === null || head2 === null){
