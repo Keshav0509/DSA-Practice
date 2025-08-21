@@ -18,12 +18,12 @@ export const buildList = (arr) => {
 }
 // print and return node list as arr;
 export const printList = (head) => {
-  const res = new Array();
+  const res = [];
   while(head !== null){
     res.push(head.val);
     head = head.next;
   }
 
   console.log(res.join(' -> '));
-  return res;
+  // return res;
 }

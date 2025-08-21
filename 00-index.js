@@ -4,6 +4,7 @@ import { booleanMatrix, optimizeBooleanMatrix } from "./arrays/03-booleanMatrix.
 import merge from "./arrays/06-mergeTwoSortedArray.js";
 import { buildList, printList } from "./linked-list/00-ListNode.js";
 import { deleteDuplicates } from "./linked-list/03-deleteDuplicates.js";
+import { moveToStart } from "./linked-list/04-moveToStart.js";
 
 
 // console.log(printSubarrays1([1, 2, 3, 4]));
@@ -13,7 +14,11 @@ import { deleteDuplicates } from "./linked-list/03-deleteDuplicates.js";
 // console.log(booleanMatrix([[1, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0]]));
 // console.log(optimizeBooleanMatrix([[1, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0]]));
 // console.log(merge([0],0,[1],1));
-const head = buildList([1,1,2,2,3]);
 // const unique = deleteDuplicates(head);
-printList(head);
 // console.log(unique); 
+const head = buildList([1,2,3,4,5]);
+// printList(head);
+const result = moveToStart(head);
+printList(result);
+
+
